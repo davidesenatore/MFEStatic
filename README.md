@@ -1,10 +1,12 @@
 # MFEStatic
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+This project was built to show the "static" integration of a module created in the mfe1 project in the shell project that act as a host for the module.
+The project uses Angular Module Federation and can be used as a starting point to explore the possibilities offered by this technology.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm run run:all` for a dev server. Both mfe1 and shell will start and navigating through links you can see the micro frontend integration
 
 ## Code scaffolding
 
