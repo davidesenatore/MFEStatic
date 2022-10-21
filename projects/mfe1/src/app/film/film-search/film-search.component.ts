@@ -15,11 +15,9 @@ export class FilmSearchComponent implements OnInit {
 
   ngOnInit() {
     this.filmService.getFilms().subscribe(
-      res => {
-        this.items = res;
-      },
-      err => {
-        //TODO! Gestire errore...
+      {
+        next: (res) => this.items = res,
+        error: (err) => console.error(err)
       }
     );
   }
